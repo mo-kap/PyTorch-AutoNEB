@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyTorch-AutoNEB
+version = "1.0"
+description = "PyTorch AutoNEB implementation to identify minimum energy paths, e.g. in neural network loss landscapes (https://arxiv.org/abs/1803.00885)"
+authors = [{name = "Felix Draxler", email = "felix.draxler@iwr.uni-heidelberg.de"}]
+dependencies = [
+    "networkx",
+    "torch"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Framework :: PyTorch",
+]
+
+
+[tool.setuptools]
+packages = ["torch_autoneb"]
